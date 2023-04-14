@@ -18,8 +18,8 @@ end
 --   require("telescope.builtin").registers()
 -- end, { desc = "Find registers" })
 
-map("n", "<leader>fw", function()
-  require("telescope.builtin").live_grep()
-end, { desc = "Find words" })
+-- map("n", "<leader>fw", function()
+--   require("telescope.builtin").live_grep()
+-- end, { desc = "Find words" })
 
 map("n", "<F7>", "<cmd>ToggleTerm direction=float<cr>", { desc = "ToggleTerm float" })

@@ -13,8 +13,8 @@ return {
       term_colors = true,
       transparent_background = false,
       styles = {
-        comments = {},
-        conditionals = {},
+        comments = { "italic" },
+        conditionals = { "italic" },
         loops = {},
         functions = {},
         keywords = {},

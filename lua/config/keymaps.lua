@@ -14,10 +14,13 @@ local function map(mode, lhs, rhs, opts)
     vim.keymap.set(mode, lhs, rhs, opts)
   end
 end
--- map("n", "<leader>fx", function()
---   require("telescope.builtin").registers()
--- end, { desc = "Find registers" })
+map("n", "<leader>fd", function()
+  require("telescope.builtin").lsp_definitions((require("telescope.themes").get_dropdown({})))
+end, { desc = "Find definitions" })
 
+map("n", "<leader>fw", function()
+  require("telescope.builtin").grep_string()
+end, { desc = "Find for word under cursor" })
 -- map("n", "<leader>fw", function()
 --   require("telescope.builtin").live_grep()
 -- end, { desc = "Find words" })

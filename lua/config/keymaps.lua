@@ -14,13 +14,13 @@ local function map(mode, lhs, rhs, opts)
     vim.keymap.set(mode, lhs, rhs, opts)
   end
 end
-map("n", "<leader>fd", function()
-  require("telescope.builtin").lsp_definitions((require("telescope.themes").get_dropdown({})))
-end, { desc = "Find definitions" })
-
-map("n", "<leader>fw", function()
-  require("telescope.builtin").live_grep()
-end, { desc = "Find words" })
+-- map("n", "<leader>fd", function()
+--   require("telescope.builtin").lsp_definitions((require("telescope.themes").get_dropdown({})))
+-- end, { desc = "Find definitions" })
+--
+-- map("n", "<leader>fw", function()
+--   require("telescope.builtin").live_grep()
+-- end, { desc = "Find words" })
 -- map("n", "<leader>fw", function()
 --   require("telescope.builtin").live_grep()
 -- end, { desc = "Find words" })

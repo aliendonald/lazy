@@ -11,4 +11,5 @@ return {
       require("colorizer").attach_to_buffer(0)
     end, 0)
   end,
+  -- TODO: działa
 }
